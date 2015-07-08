@@ -1,0 +1,8 @@
+#settingsPanel > #actionControl > input
+{
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  background-color: #C6C6C6;
+}

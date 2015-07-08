@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Whiteboard</title>
+    <link rel="stylesheet" type="text/css" href="script/javascript/lib/jqueryui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <script type="text/javascript" src="script/javascript/lib/jquery.js"></script>
+    <script type="text/javascript" src="script/javascript/lib/jqueryui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="script/javascript/main.js"></script>
+  </head>
+  
+  <body>
+    <canvas id="mainCanvas"></canvas>
+    <div id="toolboxToggle"></div>
+
+    <div id="toolbox">
+      <form action="javascript:nothing()">
+        <div class="thing">
+          <desc>Brush Size: How big do you want the stroke to be?</desc>
+          <input type="number" value="4" id="canvasBrushSize" />
+        </div>
+        <div class="thing">
+          <desc>Brush Color: What color do you want to draw in?</desc>
+          <input id="canvasStrokeColor" type="color" value="#FFFFFF">
+        </div>
+        <div class="thing">
+          <desc>Brush Type: What shape would you like the brush to be?</desc>
+          <select id="canvasStrokeShape">
+            <option value="Square">rectangle</option>
+            <option value="Circle">circle</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div id="toolboxTooltip">Tips, tricks and documentation!</div>
+
+    <div id="settingsPanel">
+      <div id="actionControl">
+        <input type="button" id="serve" value="Create Session">
+        <input type="button" id="connect" value="Connect to Session">
+      </div>
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="style/toolbox_components.css">
+    <link rel="stylesheet" type="text/css" href="style/settings.css">
+  </body>
+</html>
